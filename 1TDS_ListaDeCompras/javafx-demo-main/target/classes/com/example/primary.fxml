@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="377.0" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom , #ff3b00, #ffd600);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <children>
+      <Label text="Lista de Compras" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox alignment="BASELINE_CENTER" fillHeight="false" prefHeight="0.0" prefWidth="297.0" spacing="30.0">
+         <children>
+            <Label contentDisplay="CENTER" prefWidth="50.0" text="Produto" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productName" alignment="TOP_RIGHT" prefWidth="250.0" style="-fx-opacity: 0.8;" />
+         </children>
+      </HBox>
+      <HBox alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="297.0" spacing="30.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="50.0" text="Setor" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sectorName" prefHeight="25.0" prefWidth="250.0" style="-fx-opacity: 0.8;" />
+         </children>
+      </HBox>
+      <Button fx:id="primaryButton" onAction="#adicionarProduto" style="-fx-background-color: rgba(255, 244,116, 0.8);" text="Adicionar produto" />
+      <TextArea fx:id="productList" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
